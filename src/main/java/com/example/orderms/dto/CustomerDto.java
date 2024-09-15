@@ -8,7 +8,7 @@ import java.math.BigDecimal;
 public class CustomerDto {
     private Long id;
     private String fullName;
-    private int age;
+    private Integer age;
     private String pin;
     private BigDecimal balance;
 }
