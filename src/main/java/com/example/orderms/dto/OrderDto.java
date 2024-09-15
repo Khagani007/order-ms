@@ -5,6 +5,8 @@ import jakarta.validation.constraints.NotNull;
 import lombok.Builder;
 import lombok.Data;
 
+import java.math.BigDecimal;
+
 @Data
 @Builder
 public class OrderDto {
@@ -18,7 +20,7 @@ public class OrderDto {
 
     @NotNull(message = "Price is required")
     @Min(value = 0, message = "Price must be a positive number")
-    private double price;
+    private BigDecimal price;
 
     @NotNull(message = "Count is required")
     @Min(value = 0, message = "Count must be a positive number")

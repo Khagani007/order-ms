@@ -2,10 +2,12 @@ package com.example.orderms.dto;
 
 import lombok.Data;
 
+import java.math.BigDecimal;
+
 @Data
 public class ProductDto {
     private Long id;
     private String name;
-    private double price;
+    private BigDecimal price;
     private int count;
 }
